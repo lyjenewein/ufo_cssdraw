@@ -1,0 +1,231 @@
+body {
+  background: #0c0212;
+  height: 100%;
+}
+.animate-container {
+  position: relative;
+  top: 5vw;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  margin-left: -15vw;
+  overflow: hidden;
+}
+.spaceship-full {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.spaceship-full .spaceship-container {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  top: 50px;
+  transform: rotate(-10deg);
+  animation: fly 15s ease infinite;
+}
+.spaceship-full .spaceship-container .spaceship {
+  position: relative;
+  margin: auto;
+  width: 140px;
+  height: 78px;
+}
+.spaceship-full .spaceship-container .spaceship .top {
+  position: absolute;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 40px;
+  width: 90px;
+  background: #0ebeff;
+  left: 25px;
+}
+.spaceship-full .spaceship-container .spaceship .top::before {
+  content: "";
+  position: absolute;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 32px;
+  width: 72px;
+  background: #76daff;
+  top: 7px;
+  left: 10px;
+}
+.spaceship-full .spaceship-container .spaceship .top::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px 10px 5px 10px;
+  background: #fff;
+  left: 60px;
+  top: 8px;
+}
+.spaceship-full .spaceship-container .spaceship .middle {
+  position: absolute;
+  width: 90px;
+  height: 20px;
+  top: 20px;
+  left: 10px;
+  border-bottom: 18px solid #5c689c;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+.spaceship-full .spaceship-container .spaceship .middle::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 20px;
+  background-image: radial-gradient(#fcd36a 1px, #fcd36a 3px, transparent 3px);
+  background-position: 0px 0px;
+  background-size: 30px 30px;
+  top: 15px;
+}
+.spaceship-full .spaceship-container .spaceship .bottom {
+  position: absolute;
+  width: 140px;
+  height: 10px;
+  background: #f77e79;
+  top: 58px;
+  border-radius: 10px;
+}
+.spaceship-full .spaceship-container .spaceship .bottom::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  top: 10px;
+  left: 10px;
+  border-top: 10px solid #fcc239;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.light-perspective {
+  position: absolute;
+  width: 110px;
+  height: 200px;
+  top: 25px;
+  left: 70px;
+  perspective: 150px;
+  -webkit-perspective: 150px;
+  animation: blink 15s infinite;
+}
+.light-perspective .light {
+  position: absolute;
+  -webkit-transform: rotateX(45deg);
+  transform: rotateX(45deg);
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #fff, transparent);
+  background-size: 150px 200px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+
+/*=============keyframes=================*/
+
+@keyframes fly {
+  0% {
+    transform: rotate(-10deg);
+    left: 0;
+    top: 40px;
+ }
+  5% {
+    transform: rotate(0deg);
+    top: 40px;
+ }
+  10% {
+    transform: rotate(-5deg);
+    top: 40px;
+ }
+  15% {
+    transform: rotate(10deg);
+    top: 40px;
+ }
+  20% {
+    transform: rotate(5deg);
+    top: 40px;
+ }
+  25% {
+    transform: rotate(0deg);
+    left: 700px;
+    top: 40px;
+ }
+  30% {
+    transform: rotate(-5deg);
+    left: 700px;
+    top: 40px;
+ }
+  35% {
+    transform: rotate(-15deg);
+    left: 700px;
+    top: 40px;
+ }
+  45% {
+
+    left: 700px;
+    top: 100px;
+ }
+  60% {
+    transform: rotate(15deg);
+    left: 700px;
+    top: 100px;
+ }
+  70% {
+    left: 700px;
+    top: 100px;
+ }
+  80% {
+    transform: rotate(0deg);
+    left: 700px;
+    top: 100px;
+ }
+  90% {
+    transform: rotate(0deg);
+    left: 700px;
+        top: 100px;
+ }
+  100% {
+    transform: rotate(-10deg);
+    left: 0;
+    top: 100px;
+ }
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  79% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 0.8;
+  }
+  83% {
+    opacity: 0;
+  }
+  84% {
+    opacity: 0.3;
+  }
+  85% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0.8;
+  }
+  87% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
