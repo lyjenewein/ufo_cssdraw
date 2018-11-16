@@ -8,7 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: auto;
-  margin-left: -15vw;
+  margin-left: -22vw;
   overflow: hidden;
 }
 .spaceship-full {
@@ -22,7 +22,7 @@ body {
   height: 300px;
   top: 50px;
   transform: rotate(-10deg);
-  animation: fly 15s ease infinite;
+  //*animation: fly 15s ease infinite;*/
 }
 .spaceship-full .spaceship-container .spaceship {
   position: relative;
@@ -38,7 +38,7 @@ body {
   border-bottom-right-radius: 0px;
   height: 40px;
   width: 90px;
-  background: #0ebeff;
+  background: #81C2CC;
   left: 25px;
 }
 .spaceship-full .spaceship-container .spaceship .top::before {
@@ -50,7 +50,7 @@ body {
   border-bottom-right-radius: 0px;
   height: 32px;
   width: 72px;
-  background: #76daff;
+  background: #A0DCEA;
   top: 7px;
   left: 10px;
 }
@@ -70,7 +70,7 @@ body {
   height: 20px;
   top: 20px;
   left: 10px;
-  border-bottom: 18px solid #5c689c;
+  border-bottom: 18px solid #45B39C;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
 }
@@ -79,7 +79,7 @@ body {
   position: absolute;
   width: 90px;
   height: 20px;
-  background-image: radial-gradient(#fcd36a 1px, #fcd36a 3px, transparent 3px);
+  background-image: radial-gradient(#EADB94 1px, #EADB94 3px, transparent 3px);
   background-position: 0px 0px;
   background-size: 30px 30px;
   top: 15px;
@@ -88,7 +88,7 @@ body {
   position: absolute;
   width: 140px;
   height: 10px;
-  background: #f77e79;
+  background: #EADB94;
   top: 58px;
   border-radius: 10px;
 }
@@ -98,7 +98,7 @@ body {
   width: 100px;
   top: 10px;
   left: 10px;
-  border-top: 10px solid #fcc239;
+  border-top: 10px solid #246D5A;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
@@ -125,38 +125,40 @@ body {
   background-repeat: no-repeat;
 }
 
-
 /*=============keyframes=================*/
+
 
 @keyframes fly {
   0% {
-    transform: rotate(-10deg);
+    transform: rotate(5deg);
     left: 0;
     top: 40px;
  }
   5% {
-    transform: rotate(0deg);
+
     top: 40px;
  }
   10% {
-    transform: rotate(-5deg);
+  
     top: 40px;
  }
   15% {
-    transform: rotate(10deg);
+    transform: rotate(18deg);
     top: 40px;
  }
+  19% {
+    transform: rotate(-5deg);
+  }
   20% {
-    transform: rotate(5deg);
     top: 40px;
  }
   25% {
-    transform: rotate(0deg);
+ 
     left: 700px;
     top: 40px;
  }
   30% {
-    transform: rotate(-5deg);
+
     left: 700px;
     top: 40px;
  }
@@ -167,27 +169,26 @@ body {
  }
   45% {
 
-    left: 700px;
+    left: 500px;
     top: 100px;
  }
   60% {
-    transform: rotate(15deg);
-    left: 700px;
+    left: 500px;
     top: 100px;
  }
   70% {
-    left: 700px;
+    transform: rotate(0deg);
+    left: 500px;
     top: 100px;
  }
   80% {
-    transform: rotate(0deg);
-    left: 700px;
+    left: 500px;
     top: 100px;
  }
   90% {
     transform: rotate(0deg);
-    left: 700px;
-        top: 100px;
+    left: 500px;
+    top: 100px;
  }
   100% {
     transform: rotate(-10deg);
@@ -201,28 +202,28 @@ body {
   0% {
     opacity: 0.5;
   }
-  79% {
+  69% {
     opacity: 0.5;
   }
-  80% {
+  70% {
     opacity: 0;
   }
-  81% {
+  71% {
     opacity: 0.8;
   }
-  83% {
+  73% {
     opacity: 0;
   }
-  84% {
+  74% {
     opacity: 0.3;
   }
-  85% {
+  75% {
     opacity: 0;
   }
-  86% {
+  76% {
     opacity: 0.8;
   }
-  87% {
+  77% {
     opacity: 0.5;
   }
   100% {
